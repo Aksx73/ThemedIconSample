@@ -25,7 +25,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting("Android")
+                    Greeting("Themed icon demo app")
                 }
             }
         }
@@ -33,9 +33,9 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
+fun Greeting(text: String, modifier: Modifier = Modifier) {
     Text(
-        text = "Hello $name!",
+        text = text,
         modifier = modifier
     )
 }
@@ -53,6 +53,6 @@ fun appIcon(caption: String,icon:Drawable){
 @Composable
 fun GreetingPreview() {
     ThemedIconSampleTheme {
-        Greeting("Android")
+        Greeting("Themed icon demo app")
     }
 }
