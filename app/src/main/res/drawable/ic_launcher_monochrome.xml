@@ -3,6 +3,8 @@
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
+
+    <!--include "fillAlpha" attribute to get elevation effect-->
     <path
         android:fillAlpha="0.45"
         android:fillColor="#000000"
